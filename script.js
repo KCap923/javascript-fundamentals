@@ -34,21 +34,7 @@ const AssignmentGroup = {
       points_possible: 500
     }
   ]
-};
-
-
-const learnerA = [
-  {
-learner: 125,
-assignment1: "Declare a Variable",
-submitted: "2023-01-25", score: 47,
-assignment2: "Write a Function", submitted: "2023-02-12", score: 150,
-assignment3: "Code the World", submitted: "2023-01-25", score: 400,
-  },
-];
-
-const result = Object.groupBy(learnerA, ({type}) => type);
-console.log(result)
+}
 
 
 
@@ -103,17 +89,6 @@ const LearnerSubmissions = [
 ];
 
 
-const learner1 = {
-learnerId: 125, 
-assignment: [1, 2, 3], 
-
-
-
-}
-
-
-
-
 // ************************************************************************************************************
 
 
@@ -138,5 +113,41 @@ function getLearnerData(course, ag, submissions) {
 }
 
 // const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
-
 // console.log(result);
+
+
+
+// The arrival of submission
+// Learner ID get result/push learner to result
+// Compare assignment due at and compare dates to see
+// If assignment is passed due date
+// Calculate points deducted set info 
+// in the result 
+// Repeat per assignment
+
+// ** Use **
+// for let
+// if/else 
+// array.find /.map/.filter/.reduce?
+// object.keys /.values
+
+
+//Breaking this down 
+
+//Assignments and the due dates
+function assignmentsDue(id, name, due_at, points_possible) {
+
+console.log(assignmentsDue)
+}
+
+//Learner 1
+function leaner125(learner_id, assignment_id, submitted_at) {
+
+
+}
+
+//Learner 2 
+function leaner132(learner_id, assignment_id, submitted_at) {
+
+
+}
