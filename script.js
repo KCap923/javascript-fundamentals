@@ -37,7 +37,6 @@ const AssignmentGroup = {
 }
 
 
-
 // ************************************************************************************************************
 // The learners submissions.
 
@@ -124,10 +123,12 @@ function getLearnerData(course, ag, submissions) {
 // Calculate points deducted set info 
 // in the result 
 // Repeat per assignment
+// Disregard assignment not due yet
 
 // ** Use **
 // for let
 // if/else 
+// try/catch
 // array.find /.map/.filter/.reduce?
 // object.keys /.values
 
@@ -135,9 +136,10 @@ function getLearnerData(course, ag, submissions) {
 //Breaking this down 
 
 //Assignments and the due dates
+
 function assignmentsDue(id, name, due_at, points_possible) {
 
-console.log(assignmentsDue)
+
 }
 
 //Learner 1
@@ -150,4 +152,64 @@ function leaner125(learner_id, assignment_id, submitted_at) {
 function leaner132(learner_id, assignment_id, submitted_at) {
 
 
+}
+
+// Assignments **************************************
+
+const assignment1 = {
+  id: 1,
+  name: "Declare a Variable",
+  due_at: "2023-01-25",
+  points_possible: 50
+}
+
+const assignment2 = {
+  id: 2,
+  name: "Write a Function",
+  due_at: "2023-02-27",
+  points_possible: 150
+}
+
+const assignment3 = {
+  id: 3,
+  name: "Code the World",
+  due_at: "3156-11-15",
+  points_possible: 500
+}
+
+// Learner 1 *****************************************
+const learner1a = {
+  learner_id: 125,
+  assignment_id: 1, 
+  submitted_at: "2023-01-25",
+  score: 47
+}
+
+const learner1b = {
+  learner_id: 125,
+  assignment_id: 2,
+  submitted_at: "2023-02-12",
+  score: 150
+}
+
+const learner1c = {
+  learner_id: 125,
+  assignment_id: 3,
+  submitted_at: "2023-01-25",
+  score: 400
+}
+
+// Learner 2 ******************************************** 
+const learner2a = {
+  learner_id: 132,
+  assignment_id: 1,
+  submitted_at: "2023-01-24",
+  score: 39
+}
+
+const learner2b = {
+  learner_id: 132,
+  assignment_id: 2,
+  submitted_at: "2023-03-07",
+  score: 140
 }
