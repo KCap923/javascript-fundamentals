@@ -6,7 +6,9 @@ const CourseInfo = {
   name: "Introduction to JavaScript"
 };
 
-// The provided assignment group.
+// ************************************************************************************************************
+
+// The assignments and due dates.
 const AssignmentGroup = {
   id: 12345,
   name: "Fundamentals of JavaScript",
@@ -34,7 +36,25 @@ const AssignmentGroup = {
   ]
 };
 
-// The provided learner submission data.
+
+const learnerA = [
+  {
+learner: 125,
+assignment1: "Declare a Variable",
+submitted: "2023-01-25", score: 47,
+assignment2: "Write a Function", submitted: "2023-02-12", score: 150,
+assignment3: "Code the World", submitted: "2023-01-25", score: 400,
+  },
+];
+
+const result = Object.groupBy(learnerA, ({type}) => type);
+console.log(result)
+
+
+
+// ************************************************************************************************************
+// The learners submissions.
+
 const LearnerSubmissions = [
   {
     learner_id: 125,
@@ -60,6 +80,10 @@ const LearnerSubmissions = [
       score: 400
     }
   },
+
+
+// Second Learner ************************************************************************************************
+
   {
     learner_id: 132,
     assignment_id: 1,
@@ -77,6 +101,21 @@ const LearnerSubmissions = [
     }
   }
 ];
+
+
+const learner1 = {
+learnerId: 125, 
+assignment: [1, 2, 3], 
+
+
+
+}
+
+
+
+
+// ************************************************************************************************************
+
 
 function getLearnerData(course, ag, submissions) {
   // here, we would process this data to achieve the desired result.
@@ -98,6 +137,6 @@ function getLearnerData(course, ag, submissions) {
   return result;
 }
 
-const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
+// const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
 
-console.log(result);
+// console.log(result);
