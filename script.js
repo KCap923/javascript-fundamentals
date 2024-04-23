@@ -111,9 +111,13 @@ function getLearnerData(course, ag, submissions) {
   return result;
 }
 
-// const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
-// console.log(result);
-
+// try catch? 
+try {
+const result = getLearnerData(CourseInfo, AssignmentGroup, LearnerSubmissions);
+console.log(result);
+} catch (error) {
+console.log(error.message)
+}
 
 
 // The arrival of submission
@@ -213,3 +217,4 @@ const learner2b = {
   submitted_at: "2023-03-07",
   score: 140
 }
+
