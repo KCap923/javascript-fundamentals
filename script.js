@@ -218,3 +218,28 @@ const learner2b = {
   score: 140
 }
 
+// Learners Total
+// A possibility
+let id = assignment1[i].learner1a;
+  learner_id = id;
+
+  function leaner125(assignment1, id) {
+
+    for (let i = 0; i < assignment1.learner1a.length; i++) {
+      if (assignment1.learner1a[i].id === id) {
+        return results[i];
+      }
+    }
+  }
+
+  // let id = assignment2[i].learner1a;
+  // learner_id = id;
+
+  // function leaner125(assignment2, id) {
+
+  //   for (let i = 0; i < assignment2.learner1a.length; i++) {
+  //     if (assignment1.learner1a[i].id === id) {
+  //       return results[i];
+  //     }
+  //   }
+  // }
